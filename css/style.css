@@ -51,6 +51,21 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
+.switch{
+  height: 40px;
+  display: block;
+  border-radius: 20px;
+  background: var(--gray);
+  width: 80px;
+}
+.switch::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: var(--dark);
+  border-radius: 50%;
+}
 .header {
   background-color: #f8f9fe;
   padding-bottom: 100px;
@@ -62,7 +77,7 @@ body {
   font-size: 0.9em;
   margin: 0.5em 0;
   font-weight: 700;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   padding-bottom: 1.5em;
 }
 h1 {
@@ -224,6 +239,19 @@ h2 {
 }
 @media (prefers-color-scheme: dark) {
   body{
-    background: black;
+    background:var(--very-dark1);
+    color: white;
+  }
+  .header{
+    background: var(--very-dark);
+  }
+  :root {
+    --light-grayish:  hsl(228, 28%, 20%);
+  }
+  .card-followers-title {
+    color: var(--desaturated);
+  }
+  .card-small{
+    background: var(--dark);
   }
 }

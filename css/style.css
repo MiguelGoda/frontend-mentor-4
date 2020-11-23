@@ -51,20 +51,38 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
+.dark-mode{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.checkbox{
+  display: none;
+}
+.checkbox:checked ~ .switch::before{
+  transform: translate(0);
+}
 .switch{
   height: 40px;
   display: block;
   border-radius: 20px;
   background: var(--gray);
   width: 80px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
 }
 .switch::before{
   content: "";
   display: block;
   width: 30px;
   height: 30px;
-  background: var(--dark);
+  background: white;
   border-radius: 50%;
+  transform: translate(40px);
+  transition: .3s;
+  will-change: transform;
 }
 .header {
   background-color: #f8f9fe;
@@ -253,5 +271,15 @@ h2 {
   }
   .card-small{
     background: var(--dark);
+  }
+  .switch{
+    background-image: linear-gradient(
+      to right,
+      var(--toggle-1) 0%,
+      var(--toggle-2) 100%
+      );
+    }
+  .switch::before{
+      background: var(--dark) 
   }
 }

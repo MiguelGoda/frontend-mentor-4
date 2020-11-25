@@ -78,14 +78,14 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  background: white;
+  background:  var(--white);
   border-radius: 50%;
   transform: translate(40px);
   transition: .3s;
   will-change: transform;
 }
 .header {
-  background-color: #f8f9fe;
+  background-color:var(--white);
   padding-bottom: 100px;
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
@@ -144,7 +144,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6f717e;
+  color:var(--gray);
   font-size: 0.9em;
   font-weight: bold;
 }

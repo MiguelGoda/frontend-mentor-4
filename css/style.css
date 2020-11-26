@@ -261,6 +261,35 @@ h2 {
     grid-template-columns: 1fr 200px;
   }
 }
+.is-dark-mode{
+  body{
+    background:var(--very-dark1);
+    color: var(--white);
+  }
+  .header{
+    background: var(--very-dark);
+  }
+
+  :root {
+    --light-grayish:  hsl(228, 28%, 20%);
+  }
+  .card-followers-title {
+    color: var(--desaturated);
+  }
+  .card-small{
+    background: var(--dark);
+  }
+  .switch{
+    background-image: linear-gradient(
+      to right,
+      var(--toggle-1) 0%,
+      var(--toggle-2) 100%
+      );
+    }
+  .switch::before{
+      background: var(--dark)
+  }
+}
 @media (prefers-color-scheme: dark) {
   body{
     background:var(--very-dark1);
@@ -269,7 +298,7 @@ h2 {
   .header{
     background: var(--very-dark);
   }
- 
+
   :root {
     --light-grayish:  hsl(228, 28%, 20%);
   }

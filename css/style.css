@@ -79,22 +79,14 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-<<<<<<< HEAD
-  background:  var(--white);
-=======
   background: var(--white);
->>>>>>> 3bcaa132e122d2ed5dd6f52d2b8227ee3099a1dc
   border-radius: 50%;
   transform: translate(40px);
   transition: .3s;
   will-change: transform;
 }
 .header {
-<<<<<<< HEAD
-  background-color:var(--white);
-=======
   background-color: var(--very-pale);
->>>>>>> 3bcaa132e122d2ed5dd6f52d2b8227ee3099a1dc
   padding-bottom: 100px;
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
